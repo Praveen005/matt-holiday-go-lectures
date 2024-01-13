@@ -5,8 +5,8 @@
     - ASCII represents only the characters from american english, and all the characters fit into one byte
     - Now when we moved to international languages(likes of arabic, chinese etc.) that needed different representation. UNICODE is a way to represent them.
 
-- byte is a synonym for uint8
-- Rune is a go equivalent of what you think of as a character (int32 for characters), 32bits because, 4 byte is enough to represent any UNICODE character.
+- `byte` is a synonym for uint8
+- `Rune` is a go equivalent of what you think of as a character (int32 for characters), 32bits because, 4 byte is enough to represent any UNICODE character.
 - In order to make programs efficient, we don't want to represent every character everytime with 4 bytes, so there is a technique for encoding unicode called UTF-8, It is a short way of representing unicode in bytes, which actually co-incidentlly invented by guys who also worked on GO years ago at Bell Labs, as an efficient way to encode UNICODE
 
 > So when we think of strings in go, physically they are the UTF-8 encoding of unicode characters.
@@ -39,21 +39,13 @@ s
 ----------------------
 ```
 
-here, `hello` and `World` are substrings, and points to the memory address that is part of the string `s`. 
-```
------H e l l o ,   W o r l d-----
-     ^
-     |
-    Pointer in 'hello' string, pointing to this address in 's'. It will also have its byte length stored in it.
-``````
-
-When we do, `s += 'es'` , we create a new copy, with different memory address.
+- When we do, `s += 'es'` , we create a new copy, with different memory address.
 
 
-Strings are passed by reference, thus they aren't coppied.
+- Strings are passed by reference, thus they aren't coppied.
 
 
-## string functions
+## String functions
 
 Package `strings` has many functions on strings.
 
@@ -74,6 +66,7 @@ Go is a garbage collected language, when previous `s` is not reclaimed, it gets 
 
 - We can't modify strings inplace, since they are immutable.
 
+## bufio
 
 In `bufio`: Both `NewReader` and `NewScanner` use buffering to optimize I/O operations, but `NewScanner` adds the additional functionality of automatic tokenization based on delimiters, making it convenient for certain use cases like line-by-line reading.
 
