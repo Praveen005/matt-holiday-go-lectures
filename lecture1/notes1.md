@@ -6,6 +6,9 @@ _"Go is an attempt to combine the ease of programming pf an interpreted, dynamic
 _"Cloud doesn't exist, you just rent somebody else's computer"_  :p
 
 
+_"Go, also known as Golang, is a compiled programming language. It is designed to be statically typed and compiled to machine code. When you write a program in Go, you need to compile it before running it. The compilation process produces a binary executable file that can be executed directly on the target machine, making Go a compiled language rather than an interpreted one."_
+
+
 1. Go is a modular language, we keep files in different folders and under different packages, but this main() function has to be under the `package main`
 
 2. Also we import any package we use/need

@@ -10,6 +10,8 @@ func main(){
 	fmt.Printf("s: %8T %[1]v\n", []rune(s))  //we have 5 characters in 's', so we have five values in the slice of runes
 	fmt.Printf("s: %8T %[1]v\n", []byte(s))
 
+	stringOp()  // command: go run . hate like < test.txt
+
 }
 
 /*

@@ -1,0 +1,3 @@
+Redis has to be the most versatile modern database out there. 
+Although it is heavily used as a cache, it can also be used as a Message Broker, a Streaming engine, and so much more. Caching as we no is very important, and so is Message Broker & Streaming engine.
+Redis course will be an answer to some of your most common questions about Redis - why is Redis so fast? and how it can handle a large number of TCP connections while being single-threaded?
